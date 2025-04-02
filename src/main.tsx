@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { BookManage } from'./pages/BookManage'
 import { Login } from'./pages/Login'
 import { Register } from'./pages/Register'
+import './index.css'
 
 
 const routes = [

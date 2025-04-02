@@ -14,6 +14,15 @@ export async function register(username: string, password: string) {
 
 export async function login(username: string, password: string) {
   return await axiosInstance.post('/user/login', {
-      username, password
-  });
+    username,
+    password,
+  })
+}
+
+export async function list(name?: string) {
+  return await axiosInstance.get('/book/list', {
+    params: {
+      name,
+    },
+  })
 }
